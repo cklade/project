@@ -1,7 +1,7 @@
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #f9f3e9; /* Light warm background */
-  color: #4a3c2a; /* Darker warm text color */
+  font-family: "Times", sans-serif;
+  background-color: rgb(255, 244, 241);
+  color: rgb(0, 0, 0);
   margin: 0;
   padding: 20px;
 }
@@ -9,11 +9,15 @@ body {
 h1,
 h2,
 h3 {
-  color: #d69a6c; /* Warm accent color for headings */
+  color: rgb(0, 0, 0);
+}
+
+#sudo_abt {
+  margin: 0 300px 0 0;
 }
 
 a {
-  color: #c57b3a; /* Warm color for links */
+  color: #c57b3a;
   text-decoration: none;
 }
 
@@ -25,20 +29,105 @@ a:hover {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  background-color: #ffffff; /* White background for content */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 16px; /* Increased rounded edges */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increased shadow */
 }
 
 .button {
-  background-color: #d69a6c; /* Warm button color */
+  background-color: #d69a6c;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px; /* Increased rounded edges */
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button:hover {
-  background-color: #c57b3a; /* Darker shade on hover */
+  background-color: #c57b3a;
+  transform: translateY(-2px);
+}
+
+.navbar {
+  background-color: rgb(79, 26, 26);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow */
+  border-radius: 8px; /* Added rounded edges */
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a:hover {
+  color: rgb(202, 159, 181);
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 18px;
+}
+
+.tile {
+  background: white;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 5px solid #1f0202;
+  border-radius: 16px; /* Increased rounded edges */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.tile.text {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #777;
+  text-align: center;
+}
+
+.tile.text.dark {
+  background-color: #777;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.tile img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
