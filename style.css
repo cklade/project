@@ -30,8 +30,8 @@ a:hover {
   margin: auto;
   padding: 20px;
   background-color: #ffffff;
-  border-radius: 16px; /* Increased rounded edges */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increased shadow */
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .button {
@@ -39,7 +39,7 @@ a:hover {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 10px; /* Increased rounded edges */
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -54,8 +54,8 @@ a:hover {
   padding: 10px;
   display: flex;
   justify-content: space-around;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow */
-  border-radius: 8px; /* Added rounded edges */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
 .nav-links {
@@ -68,14 +68,12 @@ a:hover {
 .nav-links a:hover {
   color: rgb(202, 159, 181);
 }
-
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
 }
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -91,14 +89,14 @@ a:hover {
   justify-content: center;
   overflow: hidden;
   border: 5px solid #1f0202;
-  border-radius: 16px; /* Increased rounded edges */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .tile.text {
@@ -116,7 +114,7 @@ a:hover {
 }
 
 .tile img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: 0.3s ease;
 }
 
