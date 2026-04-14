@@ -1,3 +1,5 @@
+/* homepage */
+
 body {
   font-family: "Times New Roman", Times, serif;
   background-color: rgb(255, 244, 241);
@@ -72,6 +74,8 @@ footer {
     max-width: 100%;
   }
 }
+
+/* about */
 
 body {
   font-family: "Times New Roman", Times, serif;
