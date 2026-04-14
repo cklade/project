@@ -3,24 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Klade Photography</title>
+    <title>Book an Appointment</title>
 
-    <!-- Bulma -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-
-    <!-- Your custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <section class="section">
       <div class="container is-max-desktop">
-        <h1 class="title is-2 has-text-black">
-          About our Company and Photographer
-        </h1>
+        <h1 class="title is-2 has-text-black mb-5">Book an Appointment</h1>
 
         <nav
           class="navbar custom-navbar mb-6"
@@ -28,9 +23,7 @@
           aria-label="main navigation"
         >
           <div class="navbar-menu is-active">
-            <div
-              class="navbar-start is-flex is-justify-content-center is-flex-grow-1"
-            >
+            <div class="navbar-start nav-center">
               <a
                 class="navbar-item has-text-white has-text-weight-bold"
                 href="index_draft.html"
@@ -65,31 +58,158 @@
           </div>
         </nav>
 
-        <div class="columns is-vcentered mt-6 mb-6">
-          <div class="column is-7">
-            <div class="content is-medium">
-              <p>
-                Cole Klade is our founder and main photographer. He has lots of
-                experience with stills, portraits, long exposure, nature, and
-                urban photography. He loves to help peoples memories last a
-                lifetime.
+        <div class="columns is-centered">
+          <div class="column is-8-desktop is-10-tablet">
+            <div class="booking-card">
+              <h2 class="title is-4 has-text-black mb-4">
+                Schedule Your Session
+              </h2>
+              <p class="mb-5 booking-intro">
+                We would love to help capture your special moments. Please fill
+                out the form below to request an appointment, and we will follow
+                up with you as soon as possible.
               </p>
+
+              <div class="booking-success-box mb-5 is-hidden">
+                Thank you for your request. We have received your information
+                and will contact you soon to confirm your appointment details.
+              </div>
+
+              <form>
+                <div class="field">
+                  <label class="label has-text-black">Session Type</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select>
+                        <option>Select a session type</option>
+                        <option>Graduation Photos</option>
+                        <option>Family Portraits</option>
+                        <option>Couples Session</option>
+                        <option>Event Photography</option>
+                        <option>Professional Headshots</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Preferred Date</label>
+                      <div class="control">
+                        <input
+                          class="input booking-input"
+                          type="date"
+                          type="text"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Preferred Time</label>
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select>
+                            <option>Select a preferred time</option>
+                            <option>Morning</option>
+                            <option>Afternoon</option>
+                            <option>Evening</option>
+                            <option>Flexible</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Preferred Location</label>
+                  <div class="control">
+                    <input
+                      class="input booking-input"
+                      type="text"
+                      required
+                      type="text"
+                      placeholder="Enter your preferred location"
+                    />
+                  </div>
+                </div>
+
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Full Name</label>
+                      <div class="control">
+                        <input
+                          class="input booking-input"
+                          type="text"
+                          required
+                          type="text"
+                          placeholder="Enter your full name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Phone Number</label>
+                      <div class="control">
+                        <input
+                          class="input booking-input"
+                          type="text"
+                          required
+                          type="tel"
+                          placeholder="Enter your phone number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Email Address</label>
+                  <div class="control">
+                    <input
+                      class="input booking-input"
+                      type="text"
+                      required
+                      type="email"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Additional Notes</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea booking-textarea"
+                      placeholder="Tell us about your session, preferred location, group size, or any special requests"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="field mt-5">
+                  <div class="control">
+                    <button class="button booking-button" type="submit">
+                      Submit Request
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </div>
 
-          <div class="column is-5 has-text-centered">
-            <div class="image-placeholder"></div>
-          </div>
-        </div>
-
-        <div class="columns is-vcentered mt-6">
-          <div class="column is-5 has-text-centered">
-            <div class="image-placeholder"></div>
-          </div>
-
-          <div class="column is-7">
-            <div class="content is-medium">
-              <p>Photographer 2 description</p>
+            <div class="booking-contact-note mt-5">
+              <p>
+                For special inquiries, please email us at
+                <strong>klade.photography@gmail.com</strong> or call
+                <strong>###-###-####</strong>.
+              </p>
             </div>
           </div>
         </div>
