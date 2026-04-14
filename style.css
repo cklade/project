@@ -104,56 +104,228 @@ body {
   color: rgb(202, 159, 181) !important;
 }
 
-.about-row {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.hero-box {
+  background: white;
+  border: 4px solid #1f0202;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+  padding: 2rem;
 }
 
-.about-text {
-  font-size: 1.3rem;
-  line-height: 1.5;
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
-.image-placeholder {
-  width: 190px;
-  height: 230px;
-  border: 2px solid #444;
-  margin: 0 auto;
-  position: relative;
-  background-color: transparent;
+.hero-image-wrapper {
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
 }
 
-.image-placeholder::before,
-.image-placeholder::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
+.hero-image {
   width: 100%;
-  height: 2px;
-  background-color: #444;
-  transform-origin: center;
+  height: 380px;
+  object-fit: cover;
+  display: block;
 }
 
-.image-placeholder::before {
-  transform: rotate(50deg);
+.hero-button-primary {
+  background-color: rgb(79, 26, 26);
+  color: white;
+  font-weight: bold;
+  border: none;
 }
 
-.image-placeholder::after {
-  transform: rotate(-50deg);
+.hero-button-primary:hover {
+  background-color: rgb(105, 38, 38);
+  color: white;
+}
+
+.hero-button-secondary {
+  background-color: white;
+  color: rgb(79, 26, 26);
+  border: 2px solid rgb(79, 26, 26);
+  font-weight: bold;
+}
+
+.hero-button-secondary:hover {
+  background-color: rgb(255, 244, 241);
+  color: rgb(79, 26, 26);
+}
+
+.home-info-box {
+  background: white;
+  border-left: 6px solid rgb(79, 26, 26);
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  padding: 1.75rem;
+  line-height: 1.7;
+}
+
+.featured-subtext {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.photo-card {
+  background: white;
+  border: 5px solid #1f0202;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.24);
+}
+
+.gallery-image {
+  height: 300px;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-label {
+  margin: 0;
+  padding: 14px 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.cta-strip {
+  background: white;
+  border-radius: 18px;
+  border: 4px solid #1f0202;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  padding: 1.75rem 2rem;
+}
+
+footer {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .about-text {
-    text-align: center;
-    font-size: 1.15rem;
+  .hero-box,
+  .home-info-box,
+  .cta-strip {
+    padding: 1.5rem;
   }
 
-  .about-row {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+  .hero-image {
+    height: 260px;
+  }
+
+  .hero-text,
+  .featured-subtext {
+    font-size: 1rem;
   }
 }
+
+/* about */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(255, 244, 241);
+  color: rgb(0, 0, 0);
+}
+
+.custom-navbar {
+  background-color: rgb(79, 26, 26);
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.nav-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-navbar .navbar-item {
+  color: white !important;
+  font-weight: bold;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.custom-navbar .navbar-item:hover {
+  background-color: transparent !important;
+  color: rgb(202, 159, 181) !important;
+}
+
+.about-intro-box {
+  background: white;
+  border-left: 6px solid rgb(79, 26, 26);
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1.75rem;
+  line-height: 1.7;
+}
+
+.about-profile-card {
+  background: white;
+  border: 4px solid #1f0202;
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+  padding: 2rem;
+}
+
+.about-photo {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid rgb(79, 26, 26);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.about-role {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: rgb(79, 26, 26);
+  font-weight: bold;
+}
+
+.about-text {
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+footer {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-profile-card {
+    padding: 1.5rem;
+  }
+
+  .about-photo {
+    width: 210px;
+    height: 260px;
+    margin-bottom: 1rem;
+  }
+
+  .about-text,
+  .about-intro-box {
+    text-align: center;
+  }
+}
+
+/* portfolio */
 
 body {
   font-family: "Times New Roman", Times, serif;
@@ -224,6 +396,8 @@ body {
 footer {
   font-size: 1rem;
 }
+
+/* booking */
 
 body {
   font-family: "Times New Roman", Times, serif;
@@ -322,3 +496,81 @@ body {
     padding: 1.5rem;
   }
 }
+
+/* contact */
+
+.review-card {
+  background: white;
+  border: 4px solid #1f0202;
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  padding: 1.75rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.reviews-summary-box {
+  background: white;
+  border: 4px solid #1f0202;
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  padding: 2rem;
+  text-align: center;
+}
+
+.reviews-stars {
+  color: rgb(79, 26, 26);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.reviews-summary-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.review-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: rgb(25, 25, 25);
+}
+
+.review-name {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: black;
+  margin-bottom: 0.2rem;
+}
+
+.review-type {
+  color: rgb(79, 26, 26);
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 768px) {
+  .review-card,
+  .reviews-summary-box {
+    padding: 1.5rem;
+  }
+
+  .review-text,
+  .reviews-summary-text {
+    font-size: 1rem;
+  }
+
+  .reviews-stars {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* review */

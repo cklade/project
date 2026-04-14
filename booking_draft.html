@@ -70,9 +70,14 @@
                 up with you as soon as possible.
               </p>
 
+              <div class="booking-success-box mb-5 is-hidden">
+                Thank you for your request. We have received your information
+                and will contact you soon to confirm your appointment details.
+              </div>
+
               <form>
                 <div class="field">
-                  <label class="label has-text-black">Reservation Type</label>
+                  <label class="label has-text-black">Session Type</label>
                   <div class="control">
                     <div class="select is-fullwidth">
                       <select>
@@ -88,21 +93,81 @@
                   </div>
                 </div>
 
-                <div class="field">
-                  <label class="label has-text-black">Preferred Date</label>
-                  <div class="control">
-                    <input class="input booking-input" type="date" />
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Preferred Date</label>
+                      <div class="control">
+                        <input
+                          class="input booking-input"
+                          type="date"
+                          type="text"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Preferred Time</label>
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select>
+                            <option>Select a preferred time</option>
+                            <option>Morning</option>
+                            <option>Afternoon</option>
+                            <option>Evening</option>
+                            <option>Flexible</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <div class="field">
-                  <label class="label has-text-black">Full Name</label>
+                  <label class="label has-text-black">Preferred Location</label>
                   <div class="control">
                     <input
                       class="input booking-input"
                       type="text"
-                      placeholder="Enter your full name"
+                      required
+                      type="text"
+                      placeholder="Enter your preferred location"
                     />
+                  </div>
+                </div>
+
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Full Name</label>
+                      <div class="control">
+                        <input
+                          class="input booking-input"
+                          type="text"
+                          required
+                          type="text"
+                          placeholder="Enter your full name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Phone Number</label>
+                      <div class="control">
+                        <input
+                          class="input booking-input"
+                          type="text"
+                          required
+                          type="tel"
+                          placeholder="Enter your phone number"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -111,6 +176,8 @@
                   <div class="control">
                     <input
                       class="input booking-input"
+                      type="text"
+                      required
                       type="email"
                       placeholder="Enter your email address"
                     />
